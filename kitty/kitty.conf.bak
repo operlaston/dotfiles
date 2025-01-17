@@ -1,0 +1,9 @@
+font_size 12.5
+background_opacity 0.8
+shell fish
+
+
+# BEGIN_KITTY_THEME
+# Nord
+include current-theme.conf
+# END_KITTY_THEME
