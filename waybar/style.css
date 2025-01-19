@@ -26,6 +26,7 @@ window#waybar.hidden {
 }
 
 #workspaces {
+  padding: 3px 0;
 }
 
 #window {
@@ -49,7 +50,7 @@ button:hover {
 }
 
 #workspaces button {
-  padding: 0 4px;
+  padding: 1px 2px;
   color: #ffffff;
   border-radius: 20px;
 }
