@@ -10,8 +10,8 @@ end
 -- Spawn a fish shell in login mode
 config.default_prog = { "/usr/bin/fish", "-l" }
 config.color_scheme = "Gruvbox dark, hard (base16)"
-config.font_size = 12.5
-config.window_background_opacity = 1
+config.font_size = 15
+-- config.window_background_opacity = 1
 config.window_close_confirmation = "NeverPrompt"
 config.scrollback_lines = 3000
 config.default_workspace = "main"
@@ -45,7 +45,7 @@ config.keys = {
 	-- Zellij like keybindings
 	{ key = "n", mods = "ALT", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 	{ key = "m", mods = "ALT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
-	{ key = "w", mods = "ALT", action = act.CloseCurrentPane({ confirm = true}) },
+	{ key = "w", mods = "ALT", action = act.CloseCurrentPane({ confirm = true }) },
 	{ key = "h", mods = "ALT", action = act.ActivatePaneDirection("Left") },
 	{ key = "j", mods = "ALT", action = act.ActivatePaneDirection("Down") },
 	{ key = "k", mods = "ALT", action = act.ActivatePaneDirection("Up") },

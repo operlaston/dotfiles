@@ -1,14 +1,14 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 24, // Waybar height (to be removed for auto height)
+    //"height": 24, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     //"spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
     //"modules-right": ["custom/media", "tray",  "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery",  "clock"],
-    "modules-right": ["network", "pulseaudio", "keyboard-state", "battery", "clock"],
+    "modules-right": [ "keyboard-state", "tray", "network", "pulseaudio", "battery", "clock" ],
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -106,7 +106,8 @@
         //"format-plugged": "{capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "interval": 2
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface

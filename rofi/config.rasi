@@ -1,7 +1,8 @@
 configuration{
     modi: "drun";
     show-icons: true;
-    terminal: "kitty";
+    //terminal: "kitty";
+    terminal: "wezterm";
     drun-display-format: "{icon} {name}";
     location: 0;
     disable-history: false;
