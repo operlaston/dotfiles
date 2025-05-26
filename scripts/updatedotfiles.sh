@@ -3,7 +3,7 @@
 rm -rf ~/dotfiles/*
 cp ~/.wezterm.lua ~/dotfiles
 cd ~/.config
-cp -r fastfetch hypr rofi fish nvim scripts waybar ~/dotfiles
+cp -r swaync fastfetch hypr rofi fish nvim scripts waybar ~/dotfiles
 
 cd ~/dotfiles
 git add -A

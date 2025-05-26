@@ -76,6 +76,7 @@ return {
       end,
       ["lua_ls"] = function()
         nvim_lsp["lua_ls"].setup({
+          cmd = { "lua-language-server", "--force-accept-workspace" },
           on_attach = on_attach,
           capabilities = capabilities,
         })
