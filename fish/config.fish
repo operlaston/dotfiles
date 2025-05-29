@@ -24,7 +24,7 @@ function whatprovides -a pkg_name
 end
 
 function check -a pkg_name
-  dnf list "*$pkg_name*"
+  dnf list "$pkg_name"
 end
 
 function changewall -a image_path

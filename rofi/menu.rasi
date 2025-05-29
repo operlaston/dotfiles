@@ -2,7 +2,7 @@
     width: 600;
     font: "JetBrainsMono Nerd Font 14";
 }
-@import                          "./colors.rasi"
+@import                          "~/.cache/wal/colors-rofi-dark.rasi"
 element-text, element-icon, mode-switcher {
     background-color: inherit;
     text-color: inherit;
