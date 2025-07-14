@@ -19,6 +19,7 @@ return {
         "tailwindcss",
         "clangd",
         "lua_ls",
+        "jdtls"
       },
     })
 
