@@ -11,4 +11,4 @@ What I currently use\
 **Wallpaper:** swww\
 **Color Palette:** pywal\
 **App Launcher:** rofi\
-**Editor:** nvim\
+**Editor:** nvim
