@@ -11,7 +11,6 @@ return {
       automatic_installation = true,
       ensure_installed = {
         "cssls",
-        "eslint",
         "html",
         "jsonls",
         "ts_ls",
@@ -19,19 +18,16 @@ return {
         "tailwindcss",
         "clangd",
         "lua_ls",
-        "jdtls"
+        -- "jdtls"
       },
     })
 
-    require("mason-tool-installer").setup({
-      ensure_installed = {
-        "prettier",
-        "stylua",         -- lua formatter
-        "isort",          -- python formatter
-        "black",          -- python formatter
-        "pylint",
-        "eslint_d",
-      },
-    })
+    -- require("mason-tool-installer").setup({
+    --   ensure_installed = {
+    --     "prettier",
+    --     "stylua",         -- lua formatter
+    --     "eslint_d",
+    --   },
+    -- })
   end,
 }

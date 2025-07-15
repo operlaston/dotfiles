@@ -56,7 +56,7 @@ return {
       pickers = {
         find_files = {
           find_command = {
-            'fd', '--type', 'f', '-H', '--strip-cwd-prefix',
+            'fdfind', '--type', 'f', '-H', '--strip-cwd-prefix',
           }
         },
       },
