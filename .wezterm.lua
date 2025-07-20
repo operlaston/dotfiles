@@ -1,5 +1,7 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
+local scheme = "Moonfly (Gogh)"
+local scheme_def = wezterm.color.get_builtin_schemes()[scheme]
 
 local config = {}
 -- Use config builder object if possible
@@ -9,7 +11,7 @@ end
 
 -- Spawn a fish shell in login mode
 config.default_prog = { "/usr/bin/fish", "-l" }
-config.color_scheme = "Moonfly (Gogh)"
+config.color_scheme = scheme
 config.font_size = 15
 -- config.window_background_opacity = 1
 config.window_close_confirmation = "NeverPrompt"
@@ -23,23 +25,26 @@ config.inactive_pane_hsb = {
 }
 
 config.use_fancy_tab_bar = false
+config.tab_bar_at_bottom = true
+config.hide_tab_bar_if_only_one_tab = true
+
 config.colors = {
   tab_bar = {
-    background = "#000000",
+    background = "transparent",
     active_tab = {
-      bg_color = "#000000",
-      fg_color = "#bbbbbb",
+      bg_color = "transparent",
+      fg_color = scheme_def.foreground,
       intensity = "Bold",
       italic = true,
     },
     inactive_tab = {
-      bg_color = "#222222",
-      fg_color = "#bbbbbb",
+      bg_color = "transparent",
+      fg_color = scheme_def.foreground,
       intensity = "Half",
     },
     new_tab = {
-      bg_color = "#000000",
-      fg_color = "#555555"
+      bg_color = "transparent",
+      fg_color = scheme_def.foreground,
     },
   },
 }
@@ -60,10 +65,6 @@ config.keys = {
 
 config.window_frame = {
   font = wezterm.font({ family = "JetBrains Mono", weight = "Bold" }),
-
-  -- The size of the font in the tab bar.
-  -- Default to 10.0 on Windows but 12.0 on other systems
-  font_size = 12.0,
 }
 
 return config

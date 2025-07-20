@@ -11,7 +11,7 @@ set FONT_DIR /usr/share/fonts
 set EDITOR /usr/bin/vim
 set PATH /home/mlee/.local/bin:/home/mlee/bin:/home/mlee/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/opt/nvim
 
-# cat ~/.cache/wal/sequences
+cat ~/.cache/wal/sequences
 
 abbr -a c clear
 abbr -a code "code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
