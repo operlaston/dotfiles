@@ -8,7 +8,7 @@ if [ -z "$1" ]; then
   imagepath="$folder"
   echo "No image provided. A random wallpaper will be chosen."
 else
-  image=$(ls ~/wallpapers | grep -i "$1" | head -n 1)
+  image=$(ls "$folder" | grep -i "$1" | head -n 1)
   if [ -z "$image" ]; then
     imagepath="$folder"
     echo "No images matched. A random wallpaper will be chosen."

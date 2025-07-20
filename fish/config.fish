@@ -21,8 +21,9 @@ abbr -a waybar-reload "pkill waybar && hyprctl dispatch exec waybar"
 abbr -a updatedotfiles "~/.config/scripts/updatedotfiles.sh"
 abbr -a ls lsd
 abbr -a helparch cat ~/arch.cheatsheet
+abbr -a less less --LINE-NUMBERS
 
-function changewall -a image_path
-  ~/.config/scripts/change_wallpaper.sh "$image_path"
+function changewall -a image_name
+  ~/.config/scripts/change_wallpaper.sh "$image_name"
 end
 
