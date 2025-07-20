@@ -80,7 +80,7 @@
         "spacing": 10
     },
     "clock": {
-        "timezone": "America/New_York",
+        "timezone": "America/Chicago",
         //"format-alt": "{:%Y-%m-%d}"
         "format": "{:%Y %b %d %I:%M %p}",
     },
@@ -123,7 +123,7 @@
         "scroll-step": 5, // %, can be a float
         "format": "{icon} {volume}%",
         "format-bluetooth": " {icon} {volume}% {format_source}",
-        "format-muted": "󰝟",
+        "format-muted": " Muted",
         "format-icons": {
 //            "headphone": "",
 //            "phone": "",

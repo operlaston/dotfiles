@@ -2,17 +2,18 @@
 
 image=
 imagepath=
+folder="$HOME/pictures/wallpapers"
 
 if [ -z "$1" ]; then
-  imagepath="$HOME/Pictures/active-wallpapers"
+  imagepath="$folder"
   echo "No image provided. A random wallpaper will be chosen."
 else
-  image=$(ls ~/Pictures/active-wallpapers | grep -i "$1" | head -n 1)
+  image=$(ls ~/wallpapers | grep -i "$1" | head -n 1)
   if [ -z "$image" ]; then
-    imagepath="$HOME/Pictures/active-wallpapers"
+    imagepath="$folder"
     echo "No images matched. A random wallpaper will be chosen."
   else
-    imagepath="$HOME/Pictures/active-wallpapers/$image"
+    imagepath="$folder/$image"
   fi
 fi
 

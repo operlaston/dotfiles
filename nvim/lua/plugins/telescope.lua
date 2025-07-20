@@ -53,13 +53,13 @@ return {
         },
         wrap_results = true
       }),
-      pickers = {
-        find_files = {
-          find_command = {
-            'fdfind', '--type', 'f', '-H', '--strip-cwd-prefix',
-          }
-        },
-      },
+      -- pickers = {
+      --   find_files = {
+      --     find_command = {
+      --       'fdfind', '--type', 'f', '-H', '--strip-cwd-prefix',
+      --     }
+      --   },
+      -- },
     }
   end
 }
