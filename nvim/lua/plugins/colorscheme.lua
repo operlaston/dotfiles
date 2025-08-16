@@ -1,26 +1,19 @@
 return {
-  -- "rebelot/kanagawa.nvim",
+  -- "bluz71/vim-moonfly-colors",
+  -- name = "moonfly",
   -- lazy = false,
   -- priority = 1000,
-  -- compile = false,             -- enable compiling the colorscheme
-  -- undercurl = true,            -- enable undercurls
-  -- commentStyle = { italic = true },
-  -- functionStyle = {},
-  -- keywordStyle = { italic = true },
-  -- statementStyle = { bold = true },
-  -- typeStyle = {},
-  -- transparent = true,         -- do not set background color
-  -- dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
-  -- terminalColors = true,       -- define vim.g.terminal_color_{0,17}
-  -- theme = "wave",              -- Load "wave" theme
   -- config = function()
-  --   vim.cmd("colorscheme kanagawa-wave")
+  --   vim.cmd [[colorscheme moonfly]]
   -- end
-  "bluz71/vim-moonfly-colors",
-  name = "moonfly",
-  lazy = false,
-  priority = 1000,
+  "vague2k/vague.nvim",
+  lazy = false, -- make sure we load this during startup if it is your main colorscheme
+  priority = 1000, -- make sure to load this before all the other plugins
   config = function()
-    vim.cmd [[colorscheme moonfly]]
+    -- NOTE: you do not need to call setup if you don't want to.
+    require("vague").setup({
+      -- optional configuration here
+    })
+    vim.cmd("colorscheme vague")
   end
 }
