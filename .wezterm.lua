@@ -49,7 +49,7 @@ config.colors = {
   },
 }
 
-config.window_background_opacity = 0.95
+config.window_background_opacity = 0.9
 
 -- Keys
 config.keys = {

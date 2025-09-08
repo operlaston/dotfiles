@@ -5,13 +5,17 @@ imagepath=
 folder="$HOME/pictures/wallpapers"
 
 if [ -z "$1" ]; then
-  imagepath="$folder"
-  echo "No image provided. A random wallpaper will be chosen."
+  image=$(ls "$folder" | rofi -dmenu)
+  if [ -z "$image" ]; then
+    exit 1
+  else 
+    imagepath="$folder/$image"
+  fi
 else
   image=$(ls "$folder" | grep -i "$1" | head -n 1)
   if [ -z "$image" ]; then
-    imagepath="$folder"
-    echo "No images matched. A random wallpaper will be chosen."
+    echo "No images matched."
+    exit 1
   else
     imagepath="$folder/$image"
   fi

@@ -23,7 +23,7 @@ abbr -a ls lsd
 abbr -a pacmanhelp cat ~/.pacman-help
 abbr -a less less --LINE-NUMBERS
 
-function changewall -a image_name
+function changebg -a image_name
   ~/.config/scripts/change_wallpaper.sh "$image_name"
 end
 

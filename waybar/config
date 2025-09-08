@@ -6,10 +6,9 @@
     //"spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     //"modules-left": ["hyprland/window"],
-    "modules-left": ["tray"],
     "modules-center": ["hyprland/workspaces"],
     //"modules-right": ["custom/media", "tray",  "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery",  "clock"],
-    "modules-right": [ "keyboard-state", "network", "pulseaudio", "battery", "clock" ],
+    "modules-right": [ "tray", "pulseaudio", "battery", "clock" ],
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -80,9 +79,10 @@
         "spacing": 10
     },
     "clock": {
-        "timezone": "America/Chicago",
+        "timezone": "America/Indianapolis",
         //"format-alt": "{:%Y-%m-%d}"
-        "format": "{:%Y %b %d %I:%M %p}",
+        //"format": "{:%Y %b %d %I:%M %p}",
+        "format": "{:%b %d %I:%M %p}",
     },
     "cpu": {
         "format": " {usage}%",
@@ -107,7 +107,8 @@
         //"format-plugged": "{capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""],
+        "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂"],
+        //"format-icons": ["", "", "", "", ""],
         "interval": 2
     },
     "network": {
