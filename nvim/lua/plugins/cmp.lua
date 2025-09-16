@@ -21,6 +21,13 @@ return {
     require("luasnip.loaders.from_vscode").lazy_load()
 
     cmp.setup({
+      -- turns off autocompletion/suggestions when no LSP clients are active
+      enabled = function()
+        -- get active LSP clients for the current buffer
+        local clients = vim.lsp.get_active_clients({ bufnr = vim.api.nvim_get_current_buf() })
+        -- only enable cmp if there’s at least one LSP client
+        return #clients > 0
+      end,
       snippet = {
         expand = function(args)
           luasnip.lsp_expand(args.body)

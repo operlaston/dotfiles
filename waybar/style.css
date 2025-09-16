@@ -143,18 +143,19 @@ button:hover {}
 }
 
 #battery.warning:not(.charging) {
-  background-color: rgba(245, 60, 60, 1);
-  color: @foreground;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  color: #bd2a2a;
+  /* background-color: rgba(245, 60, 60, 1); */
+  /* color: @foreground; */
+  /* animation-name: blink; */
+  /* animation-duration: 0.5s; */
+  /* animation-timing-function: linear; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
 }
 
 #battery.critical:not(.charging) {
-  background-color: #f53c3c;
-  color: @textcolor;
+  background-color: rgba(245, 60, 60, 1);
+  color: @foreground;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;

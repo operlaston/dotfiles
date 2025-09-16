@@ -7,7 +7,7 @@ configuration{
     location: 0;
     disable-history: false;
     hide-scrollbar: true;
-    font: "JetBrainsMono Nerd Font 11";
+    font: "JetBrainsMono Nerd Font 10";
 }
 
 @import "~/.cache/wal/colors-rofi-dark.rasi"
