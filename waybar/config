@@ -107,7 +107,7 @@
         //"format-plugged": "{capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂"],
+        "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
         //"format-icons": ["", "", "", "", ""],
         "interval": 2
     },
@@ -124,7 +124,7 @@
         "scroll-step": 5, // %, can be a float
         "format": "{icon} {volume}%",
         "format-bluetooth": " {icon} {volume}% {format_source}",
-        "format-muted": " Muted",
+        "format-muted": "󰸈 0%",
         "format-icons": {
 //            "headphone": "",
 //            "phone": "",
