@@ -26,4 +26,3 @@ abbr -a less less --LINE-NUMBERS
 function changebg -a image_name
   ~/.config/scripts/change_wallpaper.sh "$image_name"
 end
-

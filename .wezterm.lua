@@ -9,7 +9,7 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
--- config.enable_wayland = true
+-- config.enable_wayland = false
 
 -- Spawn a fish shell in login mode
 config.default_prog = { "/usr/bin/fish", "-l" }

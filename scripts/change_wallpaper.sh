@@ -22,4 +22,4 @@ else
 fi
 
 $HOME/.local/bin/wal -i "$imagepath" -o "$HOME/.config/scripts/pywal.sh" --cols16
-swww img "$(< "${HOME}/.cache/wal/wal")" --transition-type center --transition-fps 60 --transition-duration 2 --resize crop
+swww img "$(< "${HOME}/.cache/wal/wal")" --transition-type fade --transition-fps 60 --transition-duration 2 --resize crop
