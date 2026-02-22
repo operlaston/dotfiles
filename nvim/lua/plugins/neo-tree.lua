@@ -1,6 +1,3 @@
--- Neo-tree is a Neovim plugin to browse the file system
--- https://github.com/nvim-neo-tree/neo-tree.nvim
-
 return {
   'nvim-neo-tree/neo-tree.nvim',
   version = '*',
@@ -20,7 +17,10 @@ return {
         ['d'] = 'delete',
         ['r'] = 'rename',
         ['t'] = 'open_tabnew',
+        ['m'] = 'move',
       },
+      position = 'left',
+      width = 30,
     },
     filesystem = {
       filtered_items = {
@@ -34,3 +34,4 @@ return {
     },
   },
 }
+

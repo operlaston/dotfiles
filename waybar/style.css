@@ -9,7 +9,7 @@
 }
 
 @import url("colors.css");
-@define-color textcolor @color9;
+@define-color textcolor @color14;
 
 window#waybar {
   /* background: #3b4252; */
