@@ -22,12 +22,12 @@ return {
       },
     })
 
-    -- require("mason-tool-installer").setup({
-    --   ensure_installed = {
-    --     "prettier",
-    --     "stylua",         -- lua formatter
-    --     "eslint_d",
-    --   },
-    -- })
+    require("mason-tool-installer").setup({
+      ensure_installed = {
+        "prettier",
+        "stylua", -- lua formatter
+        "eslint_d",
+      },
+    })
   end,
 }

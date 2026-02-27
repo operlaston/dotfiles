@@ -1,11 +1,4 @@
 return {
-  -- "bluz71/vim-moonfly-colors",
-  -- name = "moonfly",
-  -- lazy = false,
-  -- priority = 1000,
-  -- config = function()
-  --   vim.cmd [[colorscheme moonfly]]
-  -- end
   "vague2k/vague.nvim",
   lazy = false, -- make sure we load this during startup if it is your main colorscheme
   priority = 1000, -- make sure to load this before all the other plugins
@@ -15,5 +8,11 @@ return {
       -- optional configuration here
     })
     vim.cmd("colorscheme vague")
-  end
+  end 
+  -- "folke/tokyonight.nvim",
+  -- lazy = false,
+  -- priority = 1000,
+  -- config = function()
+  --   vim.cmd[[colorscheme tokyonight-night]]
+  -- end 
 }

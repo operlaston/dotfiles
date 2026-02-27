@@ -20,7 +20,7 @@ return {
         ['m'] = 'move',
       },
       position = 'left',
-      width = 30,
+      width = 35,
     },
     filesystem = {
       filtered_items = {

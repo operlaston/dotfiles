@@ -13,7 +13,7 @@ vim.diagnostic.config({
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 
 vim.opt.ignorecase = true
 
@@ -44,3 +44,4 @@ vim.opt.updatetime = 50
 -- vim.opt.colorcolumn = "80"
 
 vim.opt.shell = "/usr/bin/fish"
+vim.opt.cursorline = true
