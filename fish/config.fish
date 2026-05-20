@@ -22,6 +22,7 @@ abbr -a updatedotfiles "~/.config/scripts/updatedotfiles.sh"
 abbr -a ls lsd
 abbr -a pacmanhelp cat ~/.pacman-help
 abbr -a less less --LINE-NUMBERS
+abbr -a updatemirrors sudo reflector --country "United States" --latest 5 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 function changebg -a image_name
   ~/.config/scripts/change_wallpaper.sh "$image_name"
