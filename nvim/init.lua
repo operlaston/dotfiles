@@ -1,3 +1,2 @@
-require("mlee.lazy")
-require("mlee.remap")
-require("mlee.settings")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")

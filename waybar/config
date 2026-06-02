@@ -79,7 +79,7 @@
         "spacing": 10
     },
     "clock": {
-        "timezone": "America/Indianapolis",
+        "timezone": "America/Chicago",
         //"format-alt": "{:%Y-%m-%d}"
         //"format": "{:%Y %b %d %I:%M %p}",
         "format": "{:%b %d %I:%M %p}",
